@@ -1,0 +1,15 @@
+.box1 {
+  width: 300px; /*横幅の指定*/
+  height: 300px; /*高さの指定*/
+  background-color: green; /*背景色を赤に指定*/
+  margin: 30px;
+  padding: 30px;
+}
+
+.box2 {
+  width: 100px; /*横幅の指定*/
+  height: 100px; /*高さの指定*/
+  background-color: blue; /*背景色を赤に指定*/
+  /*　指定方法（box2の周囲すべてに枠線を設定する場合）*/
+  border: 5px solid yellow;
+}

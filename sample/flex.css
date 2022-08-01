@@ -1,0 +1,19 @@
+.flex {
+  background-color: #00c7ce;
+  height: 50vh; /*※vh … 高さの指定方法の一種です。Flexレイアウト以外でも使用できます。
+ウィンドウの高さ全体を100として、割合でサイズを指定します。
+100vhでウィンドウサイズと同じ高さになります。ウィンドウサイズを変えると可変します。*/
+  padding: 10px;
+  display: flex; /*.flexがフレックスコンテナになる宣言*/
+  justify-content:center; /*Flexコンテナーの内容の横方向の整列方法を指定できます。*/
+  align-items:center; /*Flexコンテナーの内容の縦方向の整列方法を指定できます。
+  基本的には、内容が1行の場合に使用します。内容が複数行になる場合は、
+  1行ごとにそれぞれ整列されます。*/
+}
+.flex > div { /*　">" A > B … セレクタの一種です。
+Flexレイアウト以外でも使用できます。
+A直下の階層にあるB要素を指定します。*/
+  background-color: #fff;
+  margin: 5px;
+  font-size: 30px;
+}

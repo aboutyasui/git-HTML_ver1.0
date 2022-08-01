@@ -1,0 +1,93 @@
+header{
+  display: flex; /*headerがフレックスコンテナになることを宣言*/
+  justify-content: flex-end;/*Flexアイテムを全て右へ寄せる設定です。*/
+  width: 100%;
+  background-color: #FF00FF; /*背景色を濃いピンクに設定*/
+  border: 2px dashed #000;/*header内に（黒の破線の）枠線を挿入*/
+  padding: 30px 20px;
+}
+hrader > div:first-child { /*headerクラスのdiv要素（子要素）の中で
+一番最初のdivを設定*/
+  margin-right: auto; /*　"justify-content: flex-end;"とセットで使う。　
+  Flexアイテムに「margin-right: auto;」の記述を組み合わせると、
+  設定したアイテムの右側に自動的に余白を作ることができます。その結果、1番目が左端
+  それ以外の子要素が右側へ寄るレイアウトを作ることができる*/
+  flex-basis: 140px;
+  height: 70px;
+  background-color:#FF99CC; /*背景色を薄いピンク*/
+}
+hrader > div:nth-child(2) {
+  flex-basis: 140px;
+  height: 70px;
+  background-color:#FF99CC; /*背景色を薄いピンク*/
+}
+hrader > div:nth-child(3) {
+  margin: 0 10px;
+  flex-basis: 140px;
+  height: 70px;
+  background-color:#FF99CC; /*背景色を薄いピンク*/
+}
+hrader > div:nth-child(4) {
+  flex-basis: 140px;
+  height: 70px;
+  background-color:#FF99CC; /*背景色を薄いピンク*/
+}
+hrader > div:nth-child(5) {
+  flex-basis: 140px;
+  height: 70px;
+  background-color:#FF99CC; /*背景色を薄いピンク*/
+}
+
+main{
+  width: 1000px;
+}
+.sidebar{
+  width: 300px;
+  background-color: #99CC66; /*背景色を黄緑に設定*/
+}
+.flex {
+  display: flex;
+  background-color: #009900; /*背景色を濃い緑に設定*/
+  padding: 20px; /*内側の余白を20px分作成*/
+  border: 2px dotted #000;/*header内に（黒の点線の）枠線を挿入*/
+  display: flex; /*.flexがフレックスコンテナになる宣言*/
+  justify-content:center; /*Flexコンテナーの内容の横方向の整列方法を指定できます。*/
+  align-items:center; /*Flexコンテナーの内容の縦方向の整列方法を指定できます。
+  基本的には、内容が1行の場合に使用します。内容が複数行になる場合は、
+  1行ごとにそれぞれ整列されます。*/
+  max-width: 700px; /* max-width:700px を指定しているため、ウィンドウ幅を広げた場合でも、
+  右側のカラムは700ピクセル以上には広がらない動作になります。*/
+  flex-grow:1; /*横幅の倍率は１倍に指定*/
+}
+.flex > div { /*　">" A > B … セレクタの一種です。
+Flexレイアウト以外でも使用できます。
+A直下の階層にあるB要素を指定します。*/
+  background-color: #ff6; /*背景色を黄色に設定*/
+  margin: 10px;
+  width: 200px;
+  height: 130px;
+}
+.flex > div:nth-child(5) {
+  border: 2px dashed #ff6;/*header内に（黄色の破線の）枠線を挿入*/
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap; /*footetの子要素の（合計の）横幅がfooter要素の横幅より
+  大きくなった場合、折り返すように設定*/
+  width:100%;
+  border: 2px dotted #000;/*header内に（黒の点線の）枠線を挿入*/
+  padding: 20px;
+  background-color: #36f; /*背景色を薄い青に設定*/
+}
+
+footer > div {
+  max-width:600px;
+  flex-basis: 45%;
+  height: 40px;
+  margin: 10px;
+  background-color: #9cf; /*背景色を薄い水色に設定*/
+}
+ footer > div:nht-chikd(2) {
+  border: 2px dotted #9cf;/*header内に（黒の点線の）枠線を挿入*/
+ }

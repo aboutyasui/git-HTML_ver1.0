@@ -1,0 +1,91 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a{
+  text-decoration: none; /*リンク下線を非表示に設定*/
+}
+header{
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center; /*中央寄りに設定*/
+}
+header .heading{ /*headerタグ内のheadingクラスのみ反映させる*/
+  font-size: 32px;
+}
+
+.nav-list{ /*ナビの設定*/
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list-item{ /*ナビ内のリストの設定*/
+  list-style: none; /*行頭に何もつかないことを*/
+  display: inline-block; /*インラインブロックの使用を宣言*/
+  margin: 0 20;
+}
+
+
+.main-visual {
+  width: 100%; /*横幅いっぱい*/
+  height: 300px;/*高さ３００px*/
+}
+.main-visual-content1{ /*メインビジュアルのコンテンツ用*/
+  height: 200px;
+  background-image: url(caravan/img/box1.jpg); /*背景画像を指定*/
+  background-size: cover; /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: center; /*背景画像を中央に配置*/
+}
+.main-visual-content2{ /*メインビジュアルのコンテンツ用*/
+  height: 200px;
+  background-image: url(caravan/img/box1.jpg); /*背景画像を指定*/
+  background-size: cover; /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: center; /*背景画像を中央に配置*/
+}
+.main-visual-content3{ /*メインビジュアルのコンテンツ用*/
+  height: 200px;
+  background-image: url(caravan/img/box1.jpg); /*背景画像を指定*/
+  background-size: cover; /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: center; /*背景画像を中央に配置*/
+}
+.main-visual-content4{ /*メインビジュアルのコンテンツ用*/
+  height: 200px;
+  background-image: url(caravan/img/box1.jpg); /*背景画像を指定*/
+  background-size: cover; /*縦横比を維持したまま背景領域を埋め尽くす*/
+  background-position: center; /*背景画像を中央に配置*/
+}
+
+.main{
+  width: 840px;
+  background-color: green; /*背景色はグリーン*/
+  display: flex; /*flexboxの利用を宣言*/
+  justify-content: center; /*子要素の横並び・中央寄せに設定*/
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+}
+.blog{
+  width: 600px;
+  height: 1400px;
+  background-color: limegreen;
+}
+.sidebar{
+  width: 240px;
+  height: 1400px;
+  background-color: palegreen;
+}
+
+footer{
+  width: 100%;
+  height: 120px;
+  text-align: center; /*左右の中央揃え*/
+  line-height: 120px; /*改行の無いテキストの上下中央揃え*/
+  background-color: #848282;
+}
+
+.footer-text{
+  color: #fff;
+}

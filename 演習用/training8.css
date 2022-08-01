@@ -1,0 +1,25 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+header { /*タイトルの設定*/
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center; /*中央寄りに設定*/
+  position: relative; /*#socialの基準位置を相対位置へ変更する*/
+}
+
+.position i{ /*アイコンの設定*/
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 32px;
+}
+.position{
+  position: absolute; /*headerの左上を基準に相絶対位置へ変更する*/
+  top: 100px;
+  right: 40px;
+}
